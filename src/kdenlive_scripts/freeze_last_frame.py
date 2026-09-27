@@ -185,7 +185,7 @@ def run(args) -> None:
             new_out = frames_to_time_code(n_frames - 1, fps)
             
             # STEP 1: extract frame
-            frame_name = f"{gen_dir}/{chain_id}_freezeframe{i}.png"
+            frame_name = str(Path(gen_dir, f"{chain_id}_freezeframe{i}.png").resolve())
             ffmpeg_jobs_args.append((frame_seek_time(out_time, clip_path), clip_path, frame_name))
             
             # STEP 2: add to project

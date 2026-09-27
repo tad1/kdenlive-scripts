@@ -37,9 +37,9 @@ uv run freeze-last-frame
 
 ### **Example**
 
-in `/data/` there's an example following command should generate working kdenlive project in `/res`:
+in `/data/` there's an example following command should generate working kdenlive project:
 
 ```sh
-uv run freeze-last-frame ./data/example_project.kdenlive -p playlist4 -o ./res/example_project2.kdenlive -d ./res/example_project2.kdenlive_frames -y
+uv run freeze-last-frame ./data/example_project.kdenlive -p playlist4 -o ./data/example_project2.kdenlive -d ./data/example_project2.kdenlive_frames -y
 ```
 
