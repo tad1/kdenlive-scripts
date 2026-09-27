@@ -1,0 +1,21 @@
+[project]
+name = "kdenlive-scripts"
+version = "0.1.0"
+description = "Collection of kdenlive scripts I use"
+readme = "README.md"
+authors = [
+    { name = "tad1", email = "kdl_scripts@tad1.dev" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "argcomplete>=3.7.2",
+    "inquirerpy>=0.3.4",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+freeze-last-frame = "kdenlive_scripts.freeze_last_frame:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
