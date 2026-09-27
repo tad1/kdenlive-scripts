@@ -13,7 +13,7 @@ uv sync
 ```
 
 ### `freeze-last-frame`
-![freeze-last-frame infographic](./doc/flf.webp)
+<img src="doc/flf.webp" alt="freeze-last-frame infographic" width="500">
 
 For a selected track, freezes the last frame of each clip.
     (if there's a blank space/gap between clips, extracts the last frame as .png and inserts as a new clip filling the blank space)
@@ -33,7 +33,7 @@ uv run freeze-last-frame
 ```
 
 ! After running the script you need to open the project to let kdenlive fix its internal references.
-![popup after loading the project](./doc/alert.webp)
+<img src="doc/alert.webp" alt="popup after loading the project" width="500">
 
 ### **Example**
 
