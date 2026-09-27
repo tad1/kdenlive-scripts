@@ -187,7 +187,6 @@ def run(args) -> None:
             # STEP 1: extract frame
             frame_name = f"{gen_dir}/{chain_id}_freezeframe{i}.png"
             ffmpeg_jobs_args.append((frame_seek_time(out_time, clip_path), clip_path, frame_name))
-            i+= 1
             
             # STEP 2: add to project
             producer_id = f"{chain_id}_freezeframe{i}"
@@ -196,6 +195,7 @@ def run(args) -> None:
                 "producer",
                 {"id":producer_id, "in": zero_frame, "out": new_out}
             )
+            i+= 1
             
             properties = [
                 ("length", str(n_frames)),
