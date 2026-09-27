@@ -1,6 +1,6 @@
 # tad1/kdenlive-scripts
 
-A collection of scripts I needed to use for Kdenlive.  Current scripts:
+A collection of scripts I needed to use for Kdenlive.
 
 ## Requirements:
 - uv
